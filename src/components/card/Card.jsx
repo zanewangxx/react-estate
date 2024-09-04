@@ -21,11 +21,11 @@ const Card = ({item}) => {
           <div className="features">
             <div className="feature">
               <img src='/bed.png' alt='logo' />
-              <span>{item.bedrooms} bedroom</span>
+              <span>{item.bedroom} bedroom</span>
             </div>
             <div className="feature">
               <img src='/bath.png' alt='logo' />
-              <span>{item.bathrooms} bathroom</span>
+              <span>{item.bathroom} bathroom</span>
             </div>
           </div>
           <div className="icons">

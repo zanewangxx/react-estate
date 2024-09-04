@@ -1,0 +1,188 @@
+@import "../../responsive.scss";
+
+.singlePage{
+    display: flex;
+    height: 100%;
+
+
+    @include md{
+        flex-direction: column;
+        overflow: scroll;
+    }
+    .details{
+        flex: 3;
+        height: 100%;
+        overflow: scroll;
+        @include md{
+            flex: none;
+            height: max-content;
+            margin-bottom: 30px;
+        }
+        .wrapper{
+            padding-right: 50px;
+
+            .info{
+                margin-top: 50px;
+                .top{
+                    display: flex;
+                    justify-content: space-between;
+                    .post{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 20px;
+                        h1{
+                            font-weight: 400;
+                        }
+                        .address{
+                            display: flex;
+                            gap: 5px;
+                            align-items: center;
+                            color: #999;
+                            font-size: 14px;
+
+                            img{
+                                width: 16px;
+                                height: 16px;
+                            }
+                        }
+                        .price{
+                            padding: 5px;
+                            background-color: rgb(207, 207, 99);
+                            border-radius: 5px;
+                            width: max-content;
+                            font-size: 20px;
+                            font-weight: 300;
+                        }
+
+                    }
+
+                    .user{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 20px;
+                        padding: 0px 50px;
+                        border-radius: 5px;
+                        background-color: rgb(207, 207, 99);
+                        font-weight: 600;
+                        img{
+                            width: 50px;
+                            height: 50px;
+                            border-radius: 50%;
+                            object-fit: cover;
+                        }
+                    }
+                }
+
+                .bottom{
+                    margin-top: 50px;
+                    color: #555;
+                    line-height: 20px;
+                }
+            }
+        }
+    }
+
+    .features{
+        flex: 2;
+        background-color: #fcf5f3;
+        height: 100%;
+        overflow: scroll;
+        @include md{
+            flex: none;
+            height: max-content;
+            padding: 20px 0px;
+        }
+
+
+        .wrapper{
+            padding: 0px 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            img{
+                width: 24px;
+                height: 24px;
+            }
+
+            .title{
+                font-weight: bold;
+                font-size: 18px;
+                margin-bottom: 5px;
+            }
+
+            .feature{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                .featureText{
+                    span{font-weight: bold;}
+                    p{font-size: 14px;}
+                }
+            }
+
+            .listVertical{
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                padding: 15px;
+                background-color: white;
+                border-radius: 5px;
+            }
+
+            .listHorizontal{
+                display: flex;
+                justify-content: space-between;
+                gap: 15px;
+                padding: 15px;
+                background-color: white;
+                border-radius: 5px;
+
+                .featureText{
+                    span{font-weight: bold;}
+                    p{font-size: 14px;}
+                }
+            }
+
+            .sizes{
+                display: flex;
+                justify-content: space-between;
+                border-radius: 5px;
+                background-color: white;
+                padding: 15px;
+
+                .size{
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                }
+            }
+
+            .mapContainer{
+                width: 100%;
+                height: 200px;
+            }
+
+            .buttons{
+                display: flex;
+                justify-content: space-between;
+
+                button{
+                    display: flex;
+                    align-items: center;
+                    padding: 5px;
+                    background-color: white;
+                    border-radius: 5px;
+
+                    img{
+                        width: 16px;
+                        height: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
