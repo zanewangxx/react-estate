@@ -1,6 +1,7 @@
 import HomePage from './pages/homePage/homePage';
 import Layout from './pages/layout/Layout';
 import ListPage from './pages/listPage/ListPage';
+import Profile from './pages/profile/Profile';
 import SinglePage from './pages/singlePage/SinglePage'
 import {
   createBrowserRouter,
@@ -28,6 +29,10 @@ function App() {
         {
           path:"/:id",
           element:<SinglePage />
+        },
+        {
+          path:"/profile",
+          element:<Profile />
         }
       ]
     }
